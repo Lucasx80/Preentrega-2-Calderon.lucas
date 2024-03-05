@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+
+
+*{
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.FotoPrincipal {
+    background-image: url(/img/5eb325794437d.jpg);
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.btn-primary {
+    background-color: rgb(137, 176, 164);
+    }
+
+
+.img {
+    display: flex;
+
+}
+
+.container {    
+    
+    height: 100vh;
+    border: 2px solid;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "caja2 caja3 caja1 caja1"
+        "caja2 caja3 caja4 caja5"    
+        "caja6 caja6 caja4 caja5"    
+    ;
+}
+
+.caja {
+    border: 1px solid rgb(162, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja1 {
+    grid-area: caja1;
+    background-color:rgb(56, 25, 89) ;
+}
+.caja2 {
+    grid-area: caja2;
+    background-color:rgb(193, 199, 185) ;
+
+}
+.caja3 {
+    grid-area: caja3;
+    background-color: rgb(171, 27, 27);
+
+}
+.caja4 {
+    grid-area: caja4;
+    background-color:blueviolet ;
+
+}
+.caja5 {
+    grid-area: caja5;
+    background-color:crimson ;
+
+}
+.caja6 {
+    grid-area: caja6;
+    background-color: sandybrown;
+
+}
+
+@media screen and ( max-width: 780px ) {
+    .contenedor {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+                "caja1 caja2"
+                "caja3 caja4"
+                "caja5 caja6";
+                    }
+                
+}                 
+
+@media screen and (max-width: 480px ) {
+
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+                "caja1"
+                "caja2"    
+                "caja3" 
+                "caja4"
+                "caja5"
+                "caja6";
+            }           
+}
