@@ -79,7 +79,64 @@
     grid-area: caja6;
     background-color: sandybrown;
 
-}*/
+}
+
+.footer {
+    padding-block: 4rem;
+}
+
+.btns {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    font-weight: 500;
+    display: flex;
+    gap: .5rem;
+    position: relative;
+    transition: .2s;
+    isolation: isolate;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: var(--clr-secondary);
+    transition: .3s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: -1;
+}
+
+.btn:hover::after {
+    height: 50%;
+}
+
+.social {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social a {
+    font-size: 3rem;
+    transition-property: transform, color;
+    transition-duration: .3s, .5s;
+    transition-delay: 0s, .1s;
+}
+
+.social a:hover {
+    transform: scale(1.2) rotate(360deg);
+    color: var(--clr-secondary);
+}
+*/
+
 
 @media screen and ( max-width: 780px ) {
     .container {
