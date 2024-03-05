@@ -29,8 +29,8 @@
     display: flex;
 
 }
-
-.container {    
+/*
+.conteiner {    
     
     height: 100vh;
     border: 2px solid;
@@ -44,42 +44,42 @@
     ;
 }
 
-.caja {
+.cajas {
     border: 1px solid rgb(162, 30, 30);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.caja1 {
+.caja1s {
     grid-area: caja1;
     background-color:rgb(56, 25, 89) ;
 }
-.caja2 {
+.caja2s {
     grid-area: caja2;
     background-color:rgb(193, 199, 185) ;
 
 }
-.caja3 {
+.caja3s {
     grid-area: caja3;
     background-color: rgb(171, 27, 27);
 
 }
-.caja4 {
+.caja4s {
     grid-area: caja4;
     background-color:blueviolet ;
 
 }
-.caja5 {
+.caja5s {
     grid-area: caja5;
     background-color:crimson ;
 
 }
-.caja6 {
+.caja6s {
     grid-area: caja6;
     background-color: sandybrown;
 
-}
+}*/
 
 @media screen and ( max-width: 780px ) {
     .contenedor {
