@@ -11,7 +11,7 @@
 }
 
 .FotoPrincipal {
-    background-image: url(/img/1\ titulo.jpg);
+    background-image: url(./img/titulo.jpg);
     height: 45vh;
     width: 100%;    
     display: flex;
@@ -20,7 +20,7 @@
     
 }
 .FotoPrincipal2 {
-    background-image: url(/img/133.jpg);
+    background-image: url(./img/133.jpg);
     height: 55vh;
     width: 100%;
     display: flex;
